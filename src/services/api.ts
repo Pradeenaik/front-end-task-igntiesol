@@ -1,5 +1,7 @@
 // src/services/api.ts
-const API_BASE_URL = 'http://skunkworks.ignitesol.com:8000';
+const API_BASE_URL = import.meta.env.MODE === 'development'
+  ? 'http://skunkworks.ignitesol.com:8000' // Direct connection in dev
+  : '/api'; // Uses Vercel rewrite in production
 
 export interface Book {
   id: number;

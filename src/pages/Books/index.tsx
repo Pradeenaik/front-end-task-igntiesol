@@ -45,14 +45,13 @@ export const BooksPage: React.FC = () => {
             <div className={styles.booksGrid}>
                 {books.map((book, index) => (
                     <div
-                        key={book.id}
+                        key={`${book.id}-${index}`}  
                         ref={index === books.length - 1 ? lastBookRef : null}
                     >
                         <BookCard book={book} onClick={handleBookClick} />
                     </div>
                 ))}
             </div>
-
             {loading && <div className={styles.loading}>Loading more books...</div>}
         </div>
     );

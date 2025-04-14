@@ -3,17 +3,17 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 10%;
-    background-color: #F8F7FF; /* Added background color */
-    min-height: 100vh; /* Full viewport height */
+    background-color: #F8F7FF; 
+    min-height: 100vh; 
   }
   
   .title {
     font-family: 'Montserrat', sans-serif;
     font-size: 48px;
     font-weight: 600; /* SemiBold */
-    color: #5E56E7; /* Changed from purple to dark grey */
-    margin: 0 0 16px 0; /* More precise spacing */
-    line-height: 1; /* Tighter line height */
+    color: #5E56E7; 
+    margin: 0 0 16px 0; 
+    line-height: 1; 
   }
   
   .subtitle {
@@ -21,14 +21,14 @@
     font-size: 16 px;
     font-weight: 400; /* Regular */
     color: #333333;
-    margin: 0 0 60px 0; /* Increased bottom margin */
+    margin: 0 0 60px 0; 
     max-width: 600px;
-    line-height: 1.5; /* Better readability */
+    line-height: 1.5; 
   }
   
   .categoriesGrid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 20px;
     column-gap: 100px;
   }
@@ -36,7 +36,7 @@
   /* For the category cards */
   .categoryCard {
     width: 100%;
-    height: 50px; /* As per Figma */
+    height: 50px; 
     padding: 0 10px; /* Padding left/right as per Figma */
     border-radius: 4px; /* Radius as per Figma */
     background: white;
@@ -59,18 +59,52 @@
     box-shadow: 0 4px 8px 0 rgba(211, 209, 238, 0.6);
   }
   
-  /* For subcategories */
+  /* For subcategories*/
   .subcategories {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 16px;
-    margin-left: 40px; /* Indentation for hierarchy */
+    margin-left: 40px; 
   }
   
   /* Alternative grid layout */
   .gridLayout {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4-column layout */
+    grid-template-columns: repeat(4, 1fr); 
     gap: 16px;
     margin-top: 40px;
+  } 
+
+  /* ===== MOBILE RESPONSIVE CHANGES (ONLY) ===== */
+@media (max-width: 768px) {
+  .container {
+      padding: 30px 5%; /* Slightly less padding on mobile */
   }
+
+  .title {
+      font-size: 32px; /* Slightly smaller title */
+  }
+
+  .subtitle {
+      font-size: 14px; /* Smaller subtitle */
+      margin-bottom: 40px; /* Less space below */
+  }
+
+  .categoriesGrid {
+      grid-template-columns: 1fr; /* Single column on mobile */
+      gap: 15px; /* Smaller gap between cards */
+      column-gap: 0; /* No extra column gap */
+  }
+
+  .categoryCard {
+      height: 45px; /* Slightly shorter cards */
+      font-size: 16px; /* Smaller text */
+  }
+}
+
+/* Optional: Extra-small devices (e.g., iPhone SE) */
+@media (max-width: 480px) {
+  .title {
+      font-size: 28px;
+  }
+}
