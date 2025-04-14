@@ -1,0 +1,25 @@
+/* src/components/CategoryCard/CategoryCard.module.css */
+.categoryCard {
+    width: 100%;
+    height: 50px;
+    padding: 0 10px;
+    border-radius: 4px;
+    background: white;
+    border: none;
+    box-shadow: 0 2px 5px 0 rgba(211, 209, 238, 0.5);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .categoryCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px 0 rgba(211, 209, 238, 0.6);
+  }

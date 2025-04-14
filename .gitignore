@@ -1,0 +1,12 @@
+# Ignore the node_modules folder
+node_modules/
+
+# Optional: You can also ignore environment files if needed
+.env
+
+# Optional: Logs
+logs/
+*.log
+
+# Optional: OS system files
+.DS_Store

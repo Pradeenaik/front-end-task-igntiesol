@@ -1,0 +1,59 @@
+/* src/pages/Books/Books.module.css */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #F8F7FF;
+    min-height: 100vh;
+  }
+  
+  .backButton {
+    background: none;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #5E56E7;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    padding: 0;
+  }
+  
+  .title {
+    display: inline-flex; /* Ensures arrow and title sit inline */
+    align-items: center; /* Vertically center arrow with text */
+    gap: 8px; /* Adds space between icon and text */
+    flex-wrap: wrap; /* Allows wrapping if needed */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #5E56E7;
+    margin-bottom: 1.5rem;
+  }
+  
+  .backArrow {
+    display: flex;
+    align-items: center;
+  }
+  
+  .searchContainer {
+    margin-bottom: 2rem;
+  }
+  
+  .booksGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Exactly 6 columns */
+    gap: 1.5rem;
+  }
+
+  .error {
+    color: #ff0000;
+    margin-bottom: 1rem;
+  }
+  
+  .loading {
+    text-align: center;
+    margin-top: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #A0A0A0;
+  }

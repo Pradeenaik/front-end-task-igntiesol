@@ -1,0 +1,109 @@
+/* src/components/SearchFilters/SearchFilters.module.css */
+.searchFilters {
+    background-color: white;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px 0 rgba(211, 209, 238, 0.5);
+    margin-bottom: 30px;
+  }
+  
+  .filterGroup {
+    margin-bottom: 15px;
+  }
+  
+  .filterGroup label {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 6px;
+  }
+  
+  .filterGroup input[type="text"],
+  .filterGroup input[type="number"],
+  .filterGroup select {
+    width: 100%;
+    height: 40px;
+    padding: 0 12px;
+    border: 1px solid #F0F0F6;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #333333;
+    background-color: white;
+    transition: all 0.2s ease;
+  }
+  
+  .filterGroup input[type="text"]:focus,
+  .filterGroup input[type="number"]:focus,
+  .filterGroup select:focus {
+    outline: none;
+    border-color: #5E56E7;
+    box-shadow: 0 0 0 2px rgba(94, 86, 231, 0.2);
+  }
+  
+  .filterGroup input::placeholder {
+    color: #A0A0A0;
+    opacity: 1;
+  }
+  
+  .yearRange {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .yearRange span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #A0A0A0;
+  }
+  
+  .filterGroup select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+    padding-right: 30px;
+  }
+  
+  /* Responsive layout */
+  @media (min-width: 768px) {
+    .searchFilters {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    
+    .filterGroup {
+      margin-bottom: 0;
+    }
+    
+    .yearRange {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5px;
+    }
+    
+    .yearRange span {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .searchFilters {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .yearRange {
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .yearRange span {
+      display: inline;
+    }
+  }

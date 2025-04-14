@@ -1,0 +1,76 @@
+/* src/pages/Home/Home.module.css */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 10%;
+    background-color: #F8F7FF; /* Added background color */
+    min-height: 100vh; /* Full viewport height */
+  }
+  
+  .title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 600; /* SemiBold */
+    color: #5E56E7; /* Changed from purple to dark grey */
+    margin: 0 0 16px 0; /* More precise spacing */
+    line-height: 1; /* Tighter line height */
+  }
+  
+  .subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16 px;
+    font-weight: 400; /* Regular */
+    color: #333333;
+    margin: 0 0 60px 0; /* Increased bottom margin */
+    max-width: 600px;
+    line-height: 1.5; /* Better readability */
+  }
+  
+  .categoriesGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+    gap: 20px;
+    column-gap: 100px;
+  }
+  
+  /* For the category cards */
+  .categoryCard {
+    width: 100%;
+    height: 50px; /* As per Figma */
+    padding: 0 10px; /* Padding left/right as per Figma */
+    border-radius: 4px; /* Radius as per Figma */
+    background: white;
+    border: none;
+    box-shadow: 0 2px 5px 0 rgba(211, 209, 238, 0.5); /* Figma box-shadow */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #333333;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.2s ease;
+  }
+  
+  .categoryCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px 0 rgba(211, 209, 238, 0.6);
+  }
+  
+  /* For subcategories */
+  .subcategories {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    margin-left: 40px; /* Indentation for hierarchy */
+  }
+  
+  /* Alternative grid layout */
+  .gridLayout {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4-column layout */
+    gap: 16px;
+    margin-top: 40px;
+  }
