@@ -1,5 +1,5 @@
 // src/services/api.ts
-const API_BASE_URL = 'http://skunkworks.ignitesol.com:8000';
+const API_BASE_URL = 'https://skunkworks.ignitesol.com:8000';
 
 export interface Book {
   id: number;
