@@ -36,7 +36,7 @@ export const BooksPage: React.FC = () => {
                 <SearchBox
                     value={searchQuery}
                     onChange={setSearchQuery}
-                    placeholder="Search "
+                    placeholder="Search"
                 />
             </div>
 

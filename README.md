@@ -21,7 +21,7 @@ Make sure you have the following installed:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/Uttam25/Frontend-test-assignment.git
+   git clone https://github.com/Pradeenaik/front-end-task-igntiesol.git
    cd Frontend-test-assignment
    ```
 
@@ -72,13 +72,6 @@ Run unit tests using Vitest:
 ```bash
 npm run test
 ```
-
-## Login Credentials
-
-For testing purposes, use the following credentials to log into the app:
-
-- **Username:** `admin`
-- **Password:** `admin123`
 
 Make sure to replace the login credentials with secure ones in a real-world application.
 

@@ -18,10 +18,6 @@ export const BookCard: React.FC<BookCardProps> = ({ book, onClick }) => {
     }
   };
 
-  const formatTitle = (title: string) => {
-    return title.length > 20 ? `${title.substring(0, 20)}...` : title;
-  };
-
   return (
     <div className={styles.bookCardWrapper} onClick={handleClick}>
       <div className={styles.bookCard}>
@@ -33,7 +29,7 @@ export const BookCard: React.FC<BookCardProps> = ({ book, onClick }) => {
           )}
         </div>
       </div>
-      <h3 className={styles.title}>{formatTitle(book.title)}</h3>
+      <h3 className={styles.title}>{book.title}</h3>
       <p className={styles.author}>{book.authors[0]?.name || 'Unknown Author'}</p>
     </div>
   );
